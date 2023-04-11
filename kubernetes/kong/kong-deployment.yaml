@@ -74,7 +74,7 @@ spec:
             - name: KONG_PROXY_ERROR_LOG
               value: /dev/stderr
             - name: KONG_ANONYMOUS_REPORTS
-              value: false
+              value: "false"
             - name: KONG_CLUSTER_LISTEN
               value: "off"
             - name: KONG_DATABASE
@@ -90,7 +90,7 @@ spec:
             - name: KONG_PORT_MAPS
               value: "$KONG_LOCAL_HTTP_PORT:8000,$KONG_LOCAL_HTTPS_PORT:8443"
             - name: KONG_HEADERS
-              value: off
+              value: "off"
             - name: KONG_ADMIN_LISTEN
               value: "0.0.0.0:8001"
             - name: KONG_PROXY_LISTEN
