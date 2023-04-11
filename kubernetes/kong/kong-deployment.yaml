@@ -88,12 +88,12 @@ spec:
             - name: KONG_PLUGINS
               value: "bundled,oidc"
             - name: KONG_PORT_MAPS
-              value: "$KONG_LOCAL_HTTP_PORT:8000, $KONG_LOCAL_HTTPS_PORT:8443"
+              value: "$KONG_LOCAL_HTTP_PORT:8000,$KONG_LOCAL_HTTPS_PORT:8443"
             - name: KONG_HEADERS
               value: off
             - name: KONG_ADMIN_LISTEN
               value: "0.0.0.0:8001"
             - name: KONG_PROXY_LISTEN
-              value: "0.0.0.0:8000, 0.0.0.0:8443 http2 ssl"
+              value: "0.0.0.0:8000,0.0.0.0:8443 http2 ssl"
             - name: KONG_STATUS_LISTEN
               value: "0.0.0.0:8100"
