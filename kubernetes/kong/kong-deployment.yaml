@@ -97,6 +97,3 @@ spec:
               value: "0.0.0.0:8000, 0.0.0.0:8443 http2 ssl"
             - name:  KONG_STATUS_LISTEN
               value: "0.0.0.0:8100"
-      
-
-
